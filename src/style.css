@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+body .anim, .anim2 {
+    margin-bottom: 70px;
+}
+
+body .svg {
+    animation: 2s Appearance ease;
+}
+
+.checkMark {
+    animation: 1s MarkAppearance ease;
+}
+
+@keyframes MarkAppearance {
+    0%{
+        width: 30px;
+        height: 11px;
+        opacity: 0;
+        transform: rotate3d(0, 360, 0, 720deg);
+    }
+    100%{
+        width: 132px;
+        height: 88px;
+        transform: rotate3d(0, 0, 0, 0deg);
+        opacity: 100%;
+    }
+}
+
+@keyframes Appearance {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
