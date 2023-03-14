@@ -17,14 +17,17 @@ body .svg {
 }
 
 .checkMark {
-    animation: 0.8s MarkAppearance ease;
+    animation: .55s MarkAppearance ease;
 }
 
 @keyframes MarkAppearance {
     0%{
-        width: 30px;
-        height: 11px;
+        width: 0;
+        height: 0;
         opacity: 0;
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+    10%{
         transform: rotate3d(0, -360, 0, 360deg);
     }
     100%{
