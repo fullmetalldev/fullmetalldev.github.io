@@ -17,7 +17,7 @@ body .svg {
 }
 
 .checkMark {
-    animation: 1s MarkAppearance ease;
+    animation: 0.8s MarkAppearance ease;
 }
 
 @keyframes MarkAppearance {
@@ -25,7 +25,7 @@ body .svg {
         width: 30px;
         height: 11px;
         opacity: 0;
-        transform: rotate3d(0, 360, 0, 720deg);
+        transform: rotate3d(0, -360, 0, 360deg);
     }
     100%{
         width: 132px;
